@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1.0, initial-scale=1.0">
+    <title>Media Player</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <h1>🎵 Modern Media Player</h1>
+    <div id="video-box">
+    <video controls width="500" height="300" id="videoPlayer"></video>
+    <div class="controls">
+     <input type="file" id="fileAccept" hidden/>
+     <button onclick="fileAccept.click()">Choose File</button>
+     <button onclick="videoPlayer.play()">▶</button>
+     <button onclick="videoPlayer.pause()">⏸</button>
+     <button onclick="repeat()">🔁</button>
+     <input type="range" id="seek" value="0" step="0.1"/>
+     <input type="range" id="volContrl" step="0.01" value="1" min="0" max="1"/>
+    </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
